@@ -137,3 +137,4 @@ Received Import Request.
 Start importing Assets/Scenes/OmarTestScene.unity using Guid(e1d5e13484116664bba32bc76f37f4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc51726e72cd9ceb47d0e244ec07692') in 0.023006 seconds 
   Import took 0.078040 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
