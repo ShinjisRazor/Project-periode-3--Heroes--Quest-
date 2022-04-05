@@ -10,6 +10,7 @@ public class SKREMovement : MonoBehaviour
     public Vector3 jumpPower;
     public int maxJump;
     public int jumpCount;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,11 @@ public class SKREMovement : MonoBehaviour
                 rb.velocity += jumpPower;
                 jumpCount++;
             }
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            animator.SetTrigger("attack2");
         }
     }
 
