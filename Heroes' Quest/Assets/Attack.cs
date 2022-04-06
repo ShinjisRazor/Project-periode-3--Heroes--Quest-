@@ -4,20 +4,9 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider infoAboutWhatIHit)
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        print("hit");
+        infoAboutWhatIHit.gameObject.GetComponent<EnemyLife>().Damage();
     }
 }

@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int hp;
 
-    // Update is called once per frame
-    void Update()
+    public void Damage()
     {
-        
+        hp -= 1;
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
